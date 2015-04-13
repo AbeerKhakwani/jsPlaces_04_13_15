@@ -5,21 +5,39 @@
     <link href="css/styles.css" rel="stylesheet" type="text/css">
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/scripts.js"></script>
-    <title>Scrabble Scores</title>
+    <title>Places you have been</title>
   </head>
   <body>
       <center>
     <div class ="container">
-    <form id='word'>
+    <form id='places'>
         <div class="form-group">
-            <label id='word'>Enter a word:</label>
-            <input id='word' name='word' type='text'>
+            <label for='city'>Enter a location you have been:</label>
+            <input id='city' name='city' type='text' value="portland">
+        </div>
+        <div class="form-group">
+            <label for='timeof_year'>Enter the time of year:</label>
+            <input id='timeof_year' name='timeof_year' type='text' value="falll">
+        </div>
+        <div class="form-group">
+            <label for='notes'>Notes</label>
+            <input id='notes' name='notes' type='text' value="loved it">
+        </div>
+        <div class="form-group">
+            <label for='country'>Country:</label>
+            <input id='country' name='country' type='text' value="usa">
         </div>
         <button type='submit' class='btn btn-success'>Submit</button>
     </form>
     </div>
-        <div id='result'>
-            <p>Your word is worth <span class='total_score'></span> points.</p>
+        <ul id='links'>
+            Here are the places you entered:
+        </ul>
+        <div id='show-location'>
+        <p>City:<span class='city'></span></p>
+        <p>Country:<span class='country'></span></p>
+        <p>Notes:<span class='notes'></span></p>
+        <p>Time of year: <span class='timeof_year'></span></p>
         </div>
     </center>
   </body>
