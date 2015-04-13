@@ -6,39 +6,49 @@
     <script src="js/jquery-1.11.2.js"></script>
     <script src="js/scripts.js"></script>
     <title>Places you have been</title>
+    <center>
+
   </head>
   <body>
-      <center>
+
     <div class ="container">
+        <h1>The Road Less Traveled</h1>
     <form id='places'>
         <div class="form-group">
-            <label for='city'>Enter a location you have been:</label>
-            <input id='city' name='city' type='text' value="portland">
+            <label for='city'><h5>Enter a location you have been:</h5></label>
+            <input id='city' name='city' type='text' placeholder='City'>
         </div>
         <div class="form-group">
-            <label for='timeof_year'>Enter the time of year:</label>
-            <input id='timeof_year' name='timeof_year' type='text' value="falll">
+            <label for='timeof_year'><h5>Enter the time of year:</h5></label>
+            <input id='timeof_year' name='timeof_year' type='text' placeholder='Season'>
         </div>
         <div class="form-group">
-            <label for='notes'>Notes</label>
-            <input id='notes' name='notes' type='text' value="loved it">
+            <label for='notes'><h5>Notes</h5></label>
+            <input id='notes' name='notes' type='text' placeholder='Trip Notes'>
         </div>
         <div class="form-group">
-            <label for='country'>Country:</label>
-            <input id='country' name='country' type='text' value="usa">
+            <label for='country'><h5>Country:</h5></label>
+            <input id='country' name='country' type='text' placeholder='Country'>
         </div>
-        <button type='submit' class='btn btn-success'>Submit</button>
+        <div class='form-group'>
+        <label for='img'><h5>Add a Picture</h5></label>
+        <input id='img' name='img' type='url'>
+        </div>
+        <button type='submit' class='btn btn-info'>Add</button>
     </form>
     </div>
-        <ul id='links'>
-            Here are the places you entered:
-        </ul>
+    <div class='secondcontainer'>
+        <h3>Places you have been</h3>
+        <p id='links'>
+        </p>
         <div id='show-location'>
-        <p>City:<span class='city'></span></p>
-        <p>Country:<span class='country'></span></p>
-        <p>Notes:<span class='notes'></span></p>
-        <p>Time of year: <span class='timeof_year'></span></p>
+        <p><img id='rcorners6' class='img' src="" ></h5></p>
+        <p><h5>City: <span class='city'></span></h5></p>
+        <p><h5>Country: <span class='country'></span></h5></p>
+        <p><h5>Notes: <span class='notes'></span></h5></p>
+        <p><h5>Time of year: <span class='timeof_year'></span></h5></p>
         </div>
+    </div>
     </center>
   </body>
 </html>
