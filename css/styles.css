@@ -28,7 +28,7 @@ h3 {
 }
 
 h5 {
-    color: #333300;
+    color: #4acdfc;
 }
 
 body {
@@ -40,9 +40,10 @@ body {
 }
 
 .container {
-    background-color: #336699;
+    background-color: rgba(51, 102, 153, .8);
     width: 300px;
     border-radius: 25px;
+
 }
 
 .secondcontainer {
