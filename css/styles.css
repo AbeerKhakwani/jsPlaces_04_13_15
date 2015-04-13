@@ -20,11 +20,15 @@
 }
 
 h1 {
-    color: #49afcd;
+    color: #33CCFF;
 }
 
 h3 {
-    color: #996633;
+    color: #333300;
+}
+
+h5 {
+    color: #333300;
 }
 
 body {
